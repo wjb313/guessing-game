@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Random Number Guessing Game</title>
+
+    <meta
+      name="description"
+      content="This applet asks the user to guess a randomly generated number between zero and thirty"
+    />
+    <meta name="author" content="wjb" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="styles/style.css"
+      media="screen"
+    />
+    <script defer src="scripts/main.js"></script>
+    <!--<link rel="stylesheet" type="text/css" href="styles/narrow-style.css" media="screen and (max-width: 515px)"/>-->
+  </head>
+
+  <body>
+    <div class="landPage">
+      <div class="landPageDesc">
+        <h1>Random Number Guessing Game</h1>
+        <h3>
+          This is a guessing game in which a random number between 1-30 will be
+          generated and the player will be given unlimited opportunities to
+          guess the number.
+        </h3>
+        <h4>
+          Each time you guess incorrectly, the guessed number will turn
+          <span class="redR">r</span><span class="redE">e</span
+          ><span class="redD">d</span> and change to a prompt that lets you know
+          if your guess was too high or too low.<br />
+        </h4>
+        <h4>
+          Once you've guessed correctly you will be shown how many guesses you
+          have made.
+        </h4>
+      </div>
+      <div class="landPageLaunch">
+        <h3>
+          Click the button below to generate a random number and get started
+          guessing!
+        </h3>
+        <button id="launchBtn">Let's play!</button>
+      </div>
+    </div>
+    <div class="gamePageWrapper">
+      <div class="gamePage">
+        <div class="gamePageHeader">
+          Click on a number below to guess. Each time you click your number of
+          guesses will be displayed in the section below.
+        </div>
+        <div class="guessTracker"></div>
+      </div>
+    </div>
+
+    <div class="winPage">
+      <div id="winPageCorrect">Correct!!!</div>
+      <div id="winPageGuess"></div>
+      <button id="resetBtn">Reset</button>
+    </div>
+  </body>
+</html>
